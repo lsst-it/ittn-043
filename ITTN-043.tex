@@ -1,6 +1,6 @@
-\documentclass[PMO,authoryear,toc]{lsstdoc}
+\documentclass[PMO,lsstdraft,authoryear,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+%\input{meta}
 
 % Package imports go here.
 
@@ -16,13 +16,13 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Cristian Silva
+Cristian Silva, Eduardo Toro, Joshua Hoblitt, Julio Constanzo
 }
 
 \setDocRef{ITTN-043}
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-043}}
 
-\date{\vcsDate}
+\date{\today}
 
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
@@ -49,6 +49,14 @@ The following document details the plan of Rubin IT to re-engineer the network u
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
+\include{introduction}
+\include{local}
+\include{design}
+\include{arista}
+\include{cisco}
+\include{juniper}
+\include{analysis}
+\include{conclusion}
 
 \appendix
 % Include all the relevant bib files.
