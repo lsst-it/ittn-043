@@ -12,6 +12,24 @@ The quotations made by Cisco partner, NTT Chile can be found on confluence under
 
 \subsection{Hardware}
 
+Our actual data center network is based on Cisco hardware and ACI-oriented, the following image is a summary of summit and base actual ACI infrastructure:
+\includegraphics[width=15cm]{images/aci-infrastructure-summit-and-base.jpg}{Actual ACI Hardware Infrastructure Summit and Base}
+
+The leaves switches can be migrated into NXOS since the software cames from fabric, we require to migrate the spine switches to NXOS. For that we have two options:
+
+\begin{itemize}
+    \item Option 1: Adquire NXOS software and licensing for spines switches, or
+    \item Option 2: Adquire new spine switches for summit and base 
+\end{itemize}
+
+The hardware required in any case will be the already in place which is:
+
+\begin{itemize}
+    \item Summit: 2 units - Cisco Nexus C9504-B3-E - 4 Slots for Line Card and 1x N9K-X9732C-EX card providing 32 100G QSFP28 ports
+    \item Base: 2 units - Cisco Nexus N9K-C9508-B3-E - 8 Slots for Line Card and 1x N9K-X9732C-EX card providing 32 100G QSFP28 ports
+\end{itemize}
+
+ 
 \subsection{License}
 
 In order to go from ACI fabric to NX-OS, we were informed by Cisco and NTT that our leaves switches will require no further licensing since they came with NX-OS supported from fabric, but that was not the case for all the spine switches, who will require new licensing to support NX-OS when migrating from ACI operating system.
@@ -24,7 +42,7 @@ The network design is based on open-source protocols in order to avoid propietar
 
 The following topology explain on a high level design how the entire Rubin's network will look like:
 
-\includegraphics[width=11cm]{images/fy21-rubin-network.jpg}
+\includegraphics[width=15cm]{images/fy21-rubin-network.jpg}
 
 \subsection{Support}
 
