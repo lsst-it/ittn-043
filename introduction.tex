@@ -1,1 +1,29 @@
 \section{Introduction}
+
+On June of 2020, The Rubin Observatory Network Pre-Verification Review recommended the evaluation of Cisco ACI to handle Rubin's network
+
+The following is their recommendation about Cisco ACI: 
+
+"The committee recommends that the use of Cisco ACI (Application Centric Infrastructure) to handle the control networks interfacing with the Summit/Base network be reviewed in the face of numerous unanswered questions. A review of networks meeting the science requirements might produce cost savings but could add risk. A crisp justification for the current over-provisioned design should be written."
+
+On September of 2020, Rubin IT assembled a panel to perform a Local network Review to follow up the recommendation made the Pre-Verification Review panel.
+
+The panel members of the Local Network Review were:
+
+\begin{itemize}
+\item Nicolas Ovando - Senior Network Engineer at ALMA Observatory
+\item Gaston Velez - Senior Infrastructure Engineer at ALMA Observatory
+\item Albert Astudillo - Technology Manager at Reuna
+\item Chris Morrison - Head of Information Technology Operations at NOIRLab \item Eduardo Toro - Senior Information Technology Engineer at NOIRLab (Chair) \item Mauricio Rojas - Information Technology Engineer at NOIRLab 
+\item Leonardo Toledo - Information Technology Engineer at NOIRLab 
+\end{itemize}
+
+The panel received several questions regarding the usage of Cisco ACI at Rubin, and the following is their recommendation:
+
+"Considering the history and origin of the project (and the original assumptions), ACI was the right choice. But analyzing the reality of today’s networking industry, it is not clear to the Panel that continuing with ACI is the best option. Continuing with ACI generates an unnecessary risk to leverage support (especially in Chile), create professional competencies, gain experience and take advantage of this technology, which could have an adverse impact on Rubin operations.
+
+Based on the provided evidence, the Panel recommends migrating to an NX-OS technology, analyzing the risk, economic (time and cost), current staff expertise, professional, and technical aspects of such a change."
+
+The following document details the research made by Rubin IT to migrate Cisco ACI to a NX-OS technology. However, given the opportunity that this migration represents, the scope of the research was open to include other vendors that could be an alternative to Cisco ACI and met the recommendations exposed by both panels.
+
+Therefore, the research has been expanded to include Arista and Juniper solutions, additionally to Cisco so there are no vendor locking technologies considered for this research.
